@@ -15,4 +15,11 @@ public class ProductList{
         double productPrice = productInput.nextDouble();// lê o input Price
         productList.add(new Product(productName, productPrice));//Instancia novo produto
     }
+    public void listProduct(){
+        for(int i = 0; i < productList.size(); i++){
+            System.out.println(productList.get(i).getName()); //print name of position in list
+            System.out.println(productList.get(i).getPrice()); //print price of position in list
+            
+        }
+    }
 }
